@@ -14,7 +14,7 @@ a {
 
 .wrapper {
     max-height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column; 
 }
@@ -132,10 +132,11 @@ option {
 
 /* ------------ slider -------------- */
 
-.slider {
+.slider { 
     padding: 180px 0 160px 0;
     background-image: url('../images/bg1.png');
-}
+} 
+
 
 .main-h1 h1 {
     color: #fff;
@@ -387,6 +388,10 @@ option {
     border: 8px solid transparent;
     border-left: 10px solid #ffcc00;
     margin-left: -25px;
+}
+
+.slider, .about {
+    background-size: cover;
 }
 
 /* ------------------------------- slider about end ----------------------- */
@@ -678,3 +683,568 @@ a.active-1 {
 }
 
 /* --------------------------------- footer end ------------------------------- */
+
+/* -------------------------------- adaptive ------------------------------- */
+
+/* -------------------------------- 1780px ------------------------------ */
+
+@media screen and (max-width:1780px) {
+    .left-side-photo img {
+        width: 347px;
+    }
+}
+
+/* -------------------------------- 1680px ------------------------------ */
+
+@media screen and (max-width:1680px) {
+    .left-side-photo img {
+        display: none;
+    }
+
+    .right-side-photo img {
+        display: none;
+    }
+
+    .footer {
+        background-position: bottom;
+        background-image: url('../images/bg-footer-adaptive.png')
+    }
+
+    .footer-row {
+        background-position: bottom;
+        background-image: url('../images/bg-footer-adaptive.png')
+    }
+
+    .footer-row h3 {
+        color: #fff;
+    }
+
+    .footer-row a {
+        color: #fff;
+    }
+
+    .footer-row a.active {
+        color: #ffcc00;
+    }
+    
+    .footer-row a.active-1 {
+        color: #017EDFFF;
+    }
+}
+
+/* -------------------------------- 1024px ------------------------------ */
+
+@media screen and (max-width:1024px) {
+    .h-m-1 {
+        margin-left: 20px;
+    }
+
+    .h-m-2 {
+        margin-right: 20px;
+    }
+
+    .main-logo {
+        margin: 0 60px 0 30px;
+    }
+
+    .search {
+        margin-left: 3%;
+    }
+
+    .slider-column {
+        margin-left: 50px;
+    }
+
+    .services-row h2 {
+        margin-left: 50px;
+    }
+
+    .services-blocks {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .services-block-1 {
+        margin-left: 35px;
+    }
+
+    .location-form {
+        margin-top: 90px;
+    }
+
+    .slider-about-row {
+        margin-top: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .block-2 {
+        margin-right: 0;
+        margin-left: 45px;
+    }
+
+    .block-3 {
+        margin-top: 70px;
+    }
+
+    .express-logistics-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right-block {
+        margin-top: 70px;
+    }
+
+    .features-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side {
+        width: 70%;
+        text-align: center;
+    }
+
+    .right-side {
+        width: 16%;
+        margin-top: 60px;
+    }
+
+    .clients-row {
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .client-2 {
+        margin-right: 0;
+    }
+
+    .client-3, .last-photo {
+        margin-top: 30px;
+    }
+}
+
+/* -------------------------------- 768px ------------------------------ */
+
+@media screen and (max-width:768px) {
+    .main-menu-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-logo {
+        margin: 0 60px 22px 30px;
+    }
+
+    .search {
+        margin-left: -3%;
+        margin-top: 30px;
+    }
+
+    .main-nav a:hover {
+        font-weight: bold;
+        border-bottom: none;
+    }
+
+    .services-block-3 {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .location-form {
+        margin-top: 50px;
+        margin-right: 19px;
+    }
+
+    .slider-about-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-block {
+        margin-right: 0;
+    }
+
+    .block-2 {
+        margin: 70px 0 0 0;
+    }
+
+    .right-side {
+        width: 21%;
+    }
+
+    .clients-row {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cont-center {
+        margin: 0 60px 0 23px;
+    }
+
+    .about-us {
+        margin-right: 60px;
+    }
+
+    .footer-row li {
+        margin-bottom: 27px;
+    }
+}
+
+/* -------------------------------- 450px ------------------------------ */
+
+@media screen and (max-width:450px) {
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav div {
+        margin: 20px 29px;
+    }
+
+    .main-nav a:hover {
+        font-weight: normal;
+        border-bottom: none;
+    }
+
+    .slider {
+        padding: 75px 0 85px 0;
+    }
+
+    .main-h1 h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .slider-column {
+        margin-left: 38px;
+    }
+
+    .slider-text p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .slider-text-2 {
+        font-size: 14px;
+        margin-top: 39px;
+    }
+
+    .button-2 {
+        margin-left: 19px;
+    }
+
+    .services {
+        padding: 50px 0;
+    }
+
+    .services-row h2 {
+        font-size: 35px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .services-blocks {
+        margin-top: 50px;
+    }
+
+    .services-block-2 {
+        margin: 50px 30px 0 30px;
+    }
+
+    .location-form {
+        margin: 50px 20px 0 20px;
+    }
+
+    .about {
+        padding: 90px 0 15px 0;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .slider-about-row {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .block-2, .block-3 {
+        margin: 50px 0 0 0;
+    }
+
+    .left-block, .right-block {
+        display: none;
+    }
+
+    .express-logistics-row {
+        padding-bottom: 0;
+    }
+
+    .features {
+        padding: 45px 0;
+    }
+
+    .left-side h1 {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .left-side p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 24px;
+    }
+
+    .right-side {
+        width: 36%;
+        margin-top: 38px;
+    }
+
+    .clients-row img {
+        width: 170px;
+    }
+
+    .clients {
+        padding: 50px 0;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        padding: 0px 0 40px 0;
+    }
+
+    .footer-row h3 {
+        font-size: 16px;
+        margin-bottom: 26px;
+    }
+
+    .footer-row a {
+        font-size: 12px;
+    }
+
+    .footer-row li {
+        margin-bottom: 11px;
+    }
+
+    .cont-center, .about-us, .social-media {
+        margin: 20px 0px 0 35px;
+    }
+}
+
+/* -------------------------------- 414px ------------------------------ */
+
+@media screen and (max-width:414px) {
+    .slider {
+        padding: 50px 0 60px 0;
+    }
+
+    .slider-column {
+        margin-left: 30px;
+    }
+
+    .main-h1 h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 28px;
+    }
+
+    .slider-text p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .slider-text-2 {
+        font-size: 13px;
+        margin-top: 28px;
+    }
+
+    .slider-button {
+        margin-top: 55px;
+    }
+
+    .button-2 {
+        margin-left: 0px;
+    }
+
+    .about h1 {
+        font-size: 25px;
+    }
+
+    .right-side {
+        width: 39%;
+    }
+}
+
+/* -------------------------------- 375px ------------------------------ */
+
+@media screen and (max-width:375px) {
+    .contact-center {
+        margin-right: 14px;
+    }
+
+    .main-h1 h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .slider-column {
+        margin-left: 23px;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .yellow-dot {
+        margin: 0 30px;
+    }
+
+    .slider-button {
+        font-size: 11px;
+    }
+
+    .slider-about-row img {
+        width: 340px;
+    }
+
+    .slider-block {
+        width: 340px;
+        height: 400px;
+    } 
+
+    .right-side {
+        width: 43%;
+    }
+
+    .clients-row img {
+        margin: 5px;
+    }
+
+    .about h1 {
+        font-size: 23px;
+    }
+}
+
+/* -------------------------------- 360px ------------------------------ */
+
+@media screen and (max-width:360px) {
+    .header-menu-row {
+        flex-direction: column-reverse;
+    }
+
+    .h-m-1 {
+        margin-top: 15px;
+    }
+
+    .h-m-2 {
+        margin: 0px 0 0 15px;
+    }
+
+    .country-profile {
+        margin-left: 95px;
+    }
+
+    .slider-column {
+        margin-left: 12px;
+    }
+
+    .main-h1 h1 {
+        font-size: 31px;
+        line-height: 36px;
+    }
+
+    .slider-about-row img {
+        width: 310px;
+    }
+
+    .slider-block {
+        width: 310px;
+        height: 385px;
+    }
+
+    .right-side {
+        width: 45%;
+    }
+
+    .clients-row img {
+        margin: 6px;
+    }
+}
+
+/* -------------------------------- 320px ------------------------------ */
+
+@media screen and (max-width:320px) {
+    .country-profile {
+        margin-left: 54px;
+    }
+
+    .main-logo {
+        margin: 0 30px 22px 30px;
+    }
+
+    .slider {
+        padding: 30px 0 45px 0;
+    }
+
+    .main-h1 h1 {
+        font-size: 27px;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+
+    .slider-text {
+        margin-top: 23px;
+    }
+
+    .slider-text p {
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .yellow-dot {
+        margin: 0px 21px;
+    }
+
+    .button-1 {
+        margin-right: 22px;
+    }
+    
+    .button-1, .button-2 {
+        padding: 11px 23px;
+    }
+
+    .services-row h2 {
+        font-size: 28px;
+    }
+
+    .services-block {
+        margin-right: 22px;
+    }
+
+    .slider-about-row img {
+        width: 290px;
+    }
+
+    .slider-block {
+        width: 290px;
+        height: 376px;
+    }
+
+    .services-block {
+        margin-right: 14px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+    }
+
+    .right-side {
+        width: 50%;
+    }
+}
+
+/* ------------------------------ end ------------------------------------- */
