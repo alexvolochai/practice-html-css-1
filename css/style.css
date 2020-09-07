@@ -1078,9 +1078,9 @@ a.active-1 {
     }
 }
 
-/* -------------------------------- 375px ------------------------------ */
+/* -------------------------------- 376px ------------------------------ */
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .contact-center {
         margin-right: 14px;
     }
@@ -1131,7 +1131,7 @@ a.active-1 {
 
 /* -------------------------------- 360px ------------------------------ */
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:360px) { 
     .header-menu-row {
         flex-direction: column-reverse;
     }
@@ -1245,6 +1245,6 @@ a.active-1 {
     .right-side {
         width: 50%;
     }
-}
+} 
 
 /* ------------------------------ end ------------------------------------- */
